@@ -1,6 +1,6 @@
 # SimpleLoginSystem
 
-##Tech Used
+## Tech Used
 
 * GO
 * HTML
