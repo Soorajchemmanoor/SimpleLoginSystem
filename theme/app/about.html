@@ -1,0 +1,114 @@
+{{define "about"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Molecule Technologies</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f8f9fa;
+        }
+        header {
+            background: url('http://placeimg.com/1500/500/office?t=1572890809080') no-repeat center center;
+            background-color:#0e878a;
+            background-size: cover;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            background: #343a40;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>About Us </h1>
+    {{if .username}}
+    <p>Hello, {{.username}}</p>
+    <a href="/logout" class="btn btn-primary">Logout</a>
+
+    {{end}}
+</header>
+<nav>
+    <a href="/">Home</a>
+    <a href="/about-us">About</a>
+    <a href="/services">Services</a>
+
+</nav>
+<main class="content">
+    <h2>About Molecule Technologies</h2>
+    <p>Molecule Technologies is a premier education institute dedicated to providing top-notch education in the field of technology. Our mission is to empower students with the skills and knowledge they need to succeed in the rapidly evolving tech industry.</p>
+    <h3>What We Teach</h3>
+    <p>We offer comprehensive courses in the following areas:</p>
+    <ul>
+        <li><strong>PHP:</strong> Master the art of server-side scripting with our in-depth PHP courses.</li>
+        <li><strong>Python:</strong> Dive into Python programming, from basics to advanced topics, and explore its vast applications.</li>
+        <li><strong>Flutter:</strong> Learn how to build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.</li>
+        <li><strong>MERN Stack:</strong> Become proficient in full-stack development with our MERN (MongoDB, Express.js, React, and Node.js) courses.</li>
+    </ul>
+    <p>Our experienced instructors and comprehensive curriculum ensure that you receive the best education possible. Whether you're a beginner or looking to enhance your skills, Molecule Technologies has something for everyone.</p>
+    <p>Join us today and take the first step towards a successful career in technology!</p>
+</main>
+<footer>
+    <p>© 2024 Molecule Technologies</p>
+</footer>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+{{end}}

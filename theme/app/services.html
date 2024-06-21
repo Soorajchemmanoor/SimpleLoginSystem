@@ -1,0 +1,168 @@
+{{define "services"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Molecule Technologies</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f8f9fa;
+        }
+        header {
+            background: url('http://placeimg.com/1500/500/technologies?t=1572890809080') no-repeat center center;
+            background-color:#0e878a;
+            background-size: cover;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 10px;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav {
+            background: #343a40;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .card {
+            margin: 20px 0;
+            padding: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: white;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Our Services</h1>
+    {{if .username}}
+    <p>Hello, {{.username}}</p>
+    <a href="/logout" class="btn btn-primary">Logout</a>
+    {{end}}
+</header>
+<nav>
+    <a href="/">Home</a>
+    <a href="/about-us">About</a>
+    <a href="/services">Services</a>
+
+</nav>
+<main class="container">
+    <div class="hero">
+        <h2>Explore Our Courses</h2>
+        <p>At Molecule Technologies, we offer a wide range of courses designed to meet the needs of today's tech professionals.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h3>PHP Development</h3>
+                <p>Master the art of server-side scripting with our comprehensive PHP courses. Learn how to create dynamic and interactive web applications.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h3>Python Programming</h3>
+                <p>Dive into Python programming, from basics to advanced topics. Explore its vast applications in data science, web development, automation, and more.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h3>Flutter Development</h3>
+                <p>Learn how to build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase using Flutter.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>Enhance your digital marketing skills with our expert-led courses. Learn SEO, social media marketing, content creation, and more.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h3>MERN Stack Development</h3>
+                <p>Become proficient in full-stack development with our MERN (MongoDB, Express.js, React, and Node.js) courses. Build modern, scalable web applications.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h3>Data Science and Machine Learning</h3>
+                <p>Unlock the power of data with our Data Science and Machine Learning courses. Learn to analyze data, build predictive models, and drive business insights.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>© 2024 Molecule Technologies</p>
+    <div>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+{{end}}
