@@ -1,4 +1,3 @@
-// auth/auth.go
 package auth
 
 const USERNAME = "sooraj"
