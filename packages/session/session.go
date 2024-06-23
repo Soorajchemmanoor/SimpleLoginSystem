@@ -1,4 +1,3 @@
-// session/session.go
 package session
 
 import (
